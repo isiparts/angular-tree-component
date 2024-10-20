@@ -35,7 +35,7 @@ Add css to `styles.scss` or include in `angular.json`:
 angular-tree-component supports angular 18 and above, and AoT compilation.
 
 versioning has been change to align with supported Angular version.
-so:
+so:  
 v18.*.* = Angular 18  
 v17.*.* = Angular 17  
 v16.*.* = Angular 16  
