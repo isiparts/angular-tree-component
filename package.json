@@ -42,7 +42,7 @@
     "e2e:tsc": "../node_modules/.bin/tsc --p e2e/tsconfig.json",
     "publish:release": "npm publish ./dist/angular-tree-component --access=public",
     "publish:next": "npm publish ./dist/angular-tree-component --tag next --access=public",
-    "pack": "npm pack ./dist/angular-tree-component --pack-destination=\"./dist\""
+    "pack": "npm pack ./dist/angular-tree-component --pack-destination=\"./pack\""
   },
   "files": [
     "dist/"
