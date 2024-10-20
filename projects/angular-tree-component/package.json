@@ -1,6 +1,6 @@
 {
   "name": "@ali-hm/angular-tree-component",
-  "version": "15.0.0",
+  "version": "16.0.1",
   "description": "A simple yet powerful tree component for Angular 14+",
   "author": "ali-hm",
   "homepage": "https://github.com/ali-hm/angular-tree-component",
@@ -25,8 +25,8 @@
     "angular tree component"
   ],
   "peerDependencies": {
-    "@angular/common": ">=14.0.0",
-    "@angular/core": ">=14.0.0",
+    "@angular/common": ">=16.0.0",
+    "@angular/core": ">=16.0.0",
     "mobx": "~4.14.1"
   },
   "dependencies": {
