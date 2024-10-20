@@ -41,7 +41,8 @@
     "test:slow": "testcafe chrome e2e/*.testcafe.js --speed 0.1",
     "e2e:tsc": "../node_modules/.bin/tsc --p e2e/tsconfig.json",
     "publish:release": "npm publish ./dist/angular-tree-component --access=public",
-    "publish:next": "npm publish ./dist/angular-tree-component --tag next --access=public"
+    "publish:next": "npm publish ./dist/angular-tree-component --tag next --access=public",
+    "pack": "npm pack ./dist/angular-tree-component --pack-destination=\"./dist\""
   },
   "files": [
     "dist/"
@@ -53,7 +54,7 @@
     "@angular/forms": "^14.3.0",
     "@angular/material": "14.2.7",
     "core-js": "^3.31.0",
-    "mobx": "^6.10.2"
+    "mobx": "4.14.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.11",
@@ -80,7 +81,6 @@
     "@types/webpack": "^1.12.29",
     "@typescript-eslint/eslint-plugin": "5.43.0",
     "@typescript-eslint/parser": "5.43.0",
-    "codelyzer": "6.0.2",
     "eslint": "^8.28.0",
     "html-dnd": "1.2.0",
     "http-server": "0.9.0",

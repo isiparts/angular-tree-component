@@ -27,7 +27,7 @@
   "peerDependencies": {
     "@angular/common": ">=14.0.0",
     "@angular/core": ">=14.0.0",
-    "mobx": "^6.10.2"
+    "mobx": "~4.14.1"
   },
   "dependencies": {
     "mobx": "~4.14.1",
