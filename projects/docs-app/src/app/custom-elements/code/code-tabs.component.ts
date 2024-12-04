@@ -21,8 +21,8 @@ export interface TabInfo {
  * The optional `linenums` attribute is the default `linenums` for each code pane.
  */
 @Component({
-  selector: 'code-tabs',
-  template: `
+    selector: 'code-tabs',
+    template: `
     <!-- Use content projection so that the provided HTML's code-panes can be split into tabs -->
     <div #content style="display: none"><ng-content></ng-content></div>
     <mat-card>
@@ -42,6 +42,7 @@ export interface TabInfo {
       </mat-tab-group>
     </mat-card>
   `,
+    standalone: false
 })
 export class CodeTabsComponent implements OnInit, AfterViewInit {
   tabs: TabInfo[];
