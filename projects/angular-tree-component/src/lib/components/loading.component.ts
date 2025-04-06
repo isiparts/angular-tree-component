@@ -1,5 +1,6 @@
 import { Component, Input, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { TreeNode } from '../models/tree-node.model';
+import { NgIf, NgTemplateOutlet } from '@angular/common';
 
 @Component({
     encapsulation: ViewEncapsulation.None,
@@ -11,7 +12,7 @@ import { TreeNode } from '../models/tree-node.model';
       [ngTemplateOutletContext]="{ $implicit: node }">
     </ng-container>
   `,
-    standalone: false
+    imports: [NgIf, NgTemplateOutlet]
 })
 export class LoadingComponent {
   @Input() template: TemplateRef<any>;

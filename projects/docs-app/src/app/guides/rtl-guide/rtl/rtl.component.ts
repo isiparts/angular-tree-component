@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-rtl',
     templateUrl: './rtl.component.html',
     styleUrls: ['./rtl.component.scss'],
-    standalone: false
+    imports: [TreeModule]
 })
 export class RtlComponent {
 

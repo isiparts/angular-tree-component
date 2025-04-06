@@ -1,4 +1,4 @@
-import { ITreeOptions } from 'angular-tree-component';
+import { ITreeOptions, TreeModule } from 'angular-tree-component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -26,7 +26,7 @@ import { Component } from '@angular/core';
     </tree-root>
   `,
     styles: [],
-    standalone: false
+    imports: [TreeModule]
 })
 export class CheckboxesComponent {
   nodes = [

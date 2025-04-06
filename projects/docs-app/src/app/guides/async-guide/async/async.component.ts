@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ITreeOptions } from 'angular-tree-component';
+import { ITreeOptions, TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-async',
     templateUrl: './async.component.html',
     styleUrls: ['./async.component.scss'],
-    standalone: false
+    imports: [TreeModule]
 })
 export class AsyncComponent {
 

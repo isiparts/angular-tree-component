@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ITreeState, ITreeOptions } from 'angular-tree-component';
+import { ITreeState, ITreeOptions, TreeModule } from 'angular-tree-component';
 import { v4 } from 'uuid';
 
 @Component({
@@ -14,7 +14,7 @@ import { v4 } from 'uuid';
     ></tree-root>
   `,
     styles: [],
-    standalone: false
+    imports: [TreeModule]
 })
 export class DragOverStylingComponent {
   state: ITreeState = {

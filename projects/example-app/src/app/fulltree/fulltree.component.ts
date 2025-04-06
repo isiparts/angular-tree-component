@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping, ITreeOptions } from 'angular-tree-component';
+import { TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping, ITreeOptions, TreeModule } from 'angular-tree-component';
+import { FormsModule } from '@angular/forms';
 
 const actionMapping: IActionMapping = {
   mouse: {
@@ -114,7 +115,7 @@ const actionMapping: IActionMapping = {
     getActiveNodes()
   </button>
   `,
-    standalone: false
+    imports: [FormsModule, TreeModule]
 })
 export class FullTreeComponent implements OnInit {
   nodes: any[];

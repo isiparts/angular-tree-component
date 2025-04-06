@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { TreeModel, TreeNode } from 'angular-tree-component';
+import { TreeModel, TreeNode, TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-filter',
     templateUrl: './filter.component.html',
     styleUrls: ['./filter.component.scss'],
-    standalone: false
+    imports: [TreeModule]
 })
 export class FilterComponent {
 

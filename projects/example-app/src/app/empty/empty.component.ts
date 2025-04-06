@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-empty',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
     <button (click)="loadNodes()">loadNodes 1</button>
   `,
     styles: [],
-    standalone: false
+    imports: [TreeModule]
 })
 export class EmptyComponent {
   nodes: any[] = [];

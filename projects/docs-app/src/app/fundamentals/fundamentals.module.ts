@@ -20,27 +20,25 @@ import { IssuesComponent } from './issues/issues.component';
 
 
 @NgModule({
-  declarations: [
-    NodesComponent,
-    OptionsComponent,
-    ActionsComponent,
-    TemplatesComponent,
-    ActionsDemoComponent,
-    TemplatesDemoComponent,
-    EventsComponent,
-    StateBindingComponent,
-    StateBindingDemoComponent,
-    ApiComponent,
-    ApiDemoComponent,
-    StylingComponent,
-    FocusComponent,
-    IssuesComponent
-  ],
-  imports: [
-    CommonModule,
-    CodeExampleModule,
-    TreeModule,
-    RouterModule
-  ]
+    imports: [
+        CommonModule,
+        CodeExampleModule,
+        TreeModule,
+        RouterModule,
+        NodesComponent,
+        OptionsComponent,
+        ActionsComponent,
+        TemplatesComponent,
+        ActionsDemoComponent,
+        TemplatesDemoComponent,
+        EventsComponent,
+        StateBindingComponent,
+        StateBindingDemoComponent,
+        ApiComponent,
+        ApiDemoComponent,
+        StylingComponent,
+        FocusComponent,
+        IssuesComponent
+    ]
 })
 export class FundamentalsModule { }

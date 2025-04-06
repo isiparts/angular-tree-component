@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-basictree',
@@ -9,7 +10,7 @@ import { Component } from '@angular/core';
     down | up | left | right | space | enter
   `,
     styles: [],
-    standalone: false
+    imports: [TreeModule]
 })
 export class BasicTreeComponent {
   nodes = [

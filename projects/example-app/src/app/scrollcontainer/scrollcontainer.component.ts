@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping, ITreeOptions } from 'angular-tree-component';
+import { TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping, ITreeOptions, TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-scrollcontainer',
@@ -15,7 +15,7 @@ import { TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping, ITreeOptions }
     ></tree-root>
   </div>
   `,
-    standalone: false
+    imports: [TreeModule]
 })
 export class ScrollContainerComponent implements OnInit {
   nodes: any[] = [];

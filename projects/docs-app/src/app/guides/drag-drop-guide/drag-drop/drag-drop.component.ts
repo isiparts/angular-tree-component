@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ITreeOptions, ITreeState } from 'angular-tree-component';
+import { ITreeOptions, ITreeState, TreeModule } from 'angular-tree-component';
 import { v4 } from 'uuid';
 
 @Component({
     selector: 'app-drag-drop',
     templateUrl: './drag-drop.component.html',
     styleUrls: ['./drag-drop.component.scss'],
-    standalone: false
+    imports: [TreeModule]
 })
 export class DragDropComponent {
 

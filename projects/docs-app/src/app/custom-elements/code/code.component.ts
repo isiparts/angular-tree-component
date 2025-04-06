@@ -4,6 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { tap } from 'rxjs/operators';
 import { CopierService } from '../../shared/copier.service';
 import { Logger } from '../../shared/logger.service';
+import { NgIf } from '@angular/common';
 
 /**
  * Formatted Code Block
@@ -39,7 +40,7 @@ import { Logger } from '../../shared/logger.service';
       <code class="animated fadeIn" #codeContainer></code>
     </pre>
     `,
-    standalone: false
+    imports: [NgIf]
 })
 export class CodeComponent implements OnChanges {
   ariaLabel = '';

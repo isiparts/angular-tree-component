@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ITreeState } from 'angular-tree-component';
+import { ITreeState, TreeModule } from 'angular-tree-component';
 
 const getChildren = () => new Promise((resolve) => {
   setTimeout(() => resolve([
@@ -17,7 +17,7 @@ const getChildren = () => new Promise((resolve) => {
     <tree-root [options]="options" [(state)]="state" #tree [focused]="true" [nodes]="nodes"></tree-root>
   `,
     styles: [],
-    standalone: false
+    imports: [TreeModule]
 })
 export class SaveRestoreComponent {
   get state(): ITreeState {

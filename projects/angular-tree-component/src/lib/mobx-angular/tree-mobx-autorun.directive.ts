@@ -9,10 +9,7 @@ import {
 } from '@angular/core';
 import { autorun } from 'mobx';
 
-@Directive({
-    selector: '[treeMobxAutorun]',
-    standalone: false
-})
+@Directive({ selector: '[treeMobxAutorun]' })
 export class TreeMobxAutorunDirective implements OnInit, OnDestroy {
   protected templateBindings = {};
   protected dispose: any;

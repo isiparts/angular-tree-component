@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { delay, map, take } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
-import { ITreeOptions, TREE_ACTIONS, TreeComponent, TreeNode } from 'angular-tree-component';
+import { ITreeOptions, TREE_ACTIONS, TreeComponent, TreeNode, TreeModule } from 'angular-tree-component';
 
 enum NodeType {
   LoadMore
@@ -22,7 +22,7 @@ interface ServiceResult {
     selector: 'app-load-more',
     templateUrl: './load-more.component.html',
     styleUrls: ['./load-more.component.scss'],
-    standalone: false
+    imports: [TreeModule]
 })
 export class LoadMoreComponent {
 

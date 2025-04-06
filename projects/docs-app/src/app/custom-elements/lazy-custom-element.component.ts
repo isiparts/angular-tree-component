@@ -4,8 +4,7 @@ import { Logger } from '../shared/logger.service';
 
 @Component({
     selector: 'aio-lazy-ce',
-    template: '',
-    standalone: false
+    template: ''
 })
 export class LazyCustomElementComponent implements OnInit {
   @Input() selector = '';

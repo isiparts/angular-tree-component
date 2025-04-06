@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { CodeExampleComponent } from '../../custom-elements/code/code-example.component';
 
 @Component({
     selector: 'app-options',
     templateUrl: './options.component.html',
     styleUrls: ['./options.component.scss'],
-    standalone: false
+    imports: [CodeExampleComponent]
 })
 export class OptionsComponent implements OnInit {
 

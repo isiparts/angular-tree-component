@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CodeExampleComponent } from '../../custom-elements/code/code-example.component';
 
 @Component({
     selector: 'app-update-guide',
     templateUrl: './update-guide.component.html',
     styleUrls: ['./update-guide.component.scss'],
-    standalone: false
+    imports: [CodeExampleComponent]
 })
 export class UpdateGuideComponent {
 

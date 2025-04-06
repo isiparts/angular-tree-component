@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { CodeExampleComponent } from '../../custom-elements/code/code-example.component';
+import { StateBindingDemoComponent } from './state-binding-demo/state-binding-demo.component';
 
 @Component({
     selector: 'app-state-binding',
     templateUrl: './state-binding.component.html',
     styleUrls: ['./state-binding.component.scss'],
-    standalone: false
+    imports: [CodeExampleComponent, StateBindingDemoComponent]
 })
 export class StateBindingComponent {
   example = `

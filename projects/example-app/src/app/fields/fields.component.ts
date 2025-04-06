@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ITreeOptions } from 'angular-tree-component';
+import { ITreeOptions, TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-fields',
@@ -8,7 +8,7 @@ import { ITreeOptions } from 'angular-tree-component';
     <tree-root id="tree1" [focused]="true" [nodes]="nodes" [options]="options"></tree-root>
   `,
     styles: [],
-    standalone: false
+    imports: [TreeModule]
 })
 export class FieldsComponent {
   nodes = [

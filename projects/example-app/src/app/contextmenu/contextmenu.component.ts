@@ -1,5 +1,7 @@
 import { Component, HostListener } from '@angular/core';
-import { ITreeOptions, TREE_ACTIONS, TreeNode, TreeModel } from 'angular-tree-component';
+import { ITreeOptions, TREE_ACTIONS, TreeNode, TreeModel, TreeModule } from 'angular-tree-component';
+import { NgIf } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-contextmenu',
@@ -52,7 +54,7 @@ import { ITreeOptions, TREE_ACTIONS, TreeNode, TreeModel } from 'angular-tree-co
       background-color: aliceblue;
     }`,
     ],
-    standalone: false
+    imports: [TreeModule, NgIf, FormsModule]
 })
 export class ContextmenuComponent {
   contextMenu: {node: TreeNode, x: number, y: number} = null;

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping, ITreeOptions } from 'angular-tree-component';
+import { TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping, ITreeOptions, TreeModule } from 'angular-tree-component';
 
 const actionMapping: IActionMapping = {
   mouse: {
@@ -51,7 +51,7 @@ const actionMapping: IActionMapping = {
     double click - expand / collapse<br>
     right-click - show alert
   `,
-    standalone: false
+    imports: [TreeModule]
 })
 export class ActionsComponent {
   nodes = [

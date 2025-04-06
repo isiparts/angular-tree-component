@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CodeExampleComponent } from '../../custom-elements/code/code-example.component';
 
 @Component({
     selector: 'app-events',
     templateUrl: './events.component.html',
     styleUrls: ['./events.component.scss'],
-    standalone: false
+    imports: [CodeExampleComponent]
 })
 export class EventsComponent {
   event = `

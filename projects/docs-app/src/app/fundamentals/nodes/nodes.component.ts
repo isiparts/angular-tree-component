@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { CodeExampleComponent } from '../../custom-elements/code/code-example.component';
 
 @Component({
     selector: 'app-nodes',
     templateUrl: './nodes.component.html',
     styleUrls: ['./nodes.component.scss'],
-    standalone: false
+    imports: [CodeExampleComponent]
 })
 export class NodesComponent implements OnInit {
 

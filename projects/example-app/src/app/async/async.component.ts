@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ITreeOptions, TreeNode} from 'angular-tree-component';
+import { ITreeOptions, TreeNode, TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-async',
@@ -7,7 +7,7 @@ import { ITreeOptions, TreeNode} from 'angular-tree-component';
     <tree-root #tree [options]="options" [nodes]="nodes"></tree-root>
  `,
     styles: [],
-    standalone: false
+    imports: [TreeModule]
 })
 export class AsyncTreeComponent {
   options: ITreeOptions = {

@@ -1,5 +1,6 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { TreeNode } from '../models/tree-node.model';
+import { TreeMobxAutorunDirective } from '../mobx-angular/tree-mobx-autorun.directive';
 
 @Component({
     selector: 'tree-node-checkbox',
@@ -16,7 +17,7 @@ import { TreeNode } from '../models/tree-node.model';
       />
     </ng-container>
   `,
-    standalone: false
+    imports: [TreeMobxAutorunDirective]
 })
 export class TreeNodeCheckboxComponent {
   @Input() node: TreeNode;

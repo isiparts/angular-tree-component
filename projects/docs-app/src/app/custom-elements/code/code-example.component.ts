@@ -1,6 +1,7 @@
 /* tslint:disable component-selector */
 import { Component, HostBinding, ElementRef, ViewChild, Input, AfterViewInit } from '@angular/core';
 import { CodeComponent } from './code.component';
+import { NgIf, NgClass } from '@angular/common';
 
 /**
  * An embeddable code block that displays nicely formatted code.
@@ -28,7 +29,7 @@ import { CodeComponent } from './code.component';
               [header]="header">
     </aio-code>
   `,
-    standalone: false
+    imports: [NgIf, CodeComponent, NgClass]
 })
 export class CodeExampleComponent implements AfterViewInit {
   classes: {};

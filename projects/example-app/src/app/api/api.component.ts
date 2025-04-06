@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TreeNode, TreeModel, ITreeOptions } from 'angular-tree-component';
+import { TreeNode, TreeModel, ITreeOptions, TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-api',
@@ -55,7 +55,7 @@ import { TreeNode, TreeModel, ITreeOptions } from 'angular-tree-component';
     getActiveNodes()
   </button>
   `,
-    standalone: false
+    imports: [TreeModule]
 })
 export class ApiComponent {
   options: ITreeOptions = {

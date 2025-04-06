@@ -15,10 +15,7 @@ import { TreeDraggedElement } from '../models/tree-dragged-element.model';
 const DRAG_OVER_CLASS = 'is-dragging-over';
 const DRAG_DISABLED_CLASS = 'is-dragging-over-disabled';
 
-@Directive({
-    selector: '[treeDrop]',
-    standalone: false
-})
+@Directive({ selector: '[treeDrop]' })
 export class TreeDropDirective implements AfterViewInit, OnDestroy {
   @Input() allowDragoverStyling = true;
   @Output('treeDrop') onDropCallback = new EventEmitter();

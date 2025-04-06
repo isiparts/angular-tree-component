@@ -1,5 +1,7 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { TreeNode } from '../models/tree-node.model';
+import { TreeMobxAutorunDirective } from '../mobx-angular/tree-mobx-autorun.directive';
+import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'tree-node-expander',
@@ -20,7 +22,7 @@ import { TreeNode } from '../models/tree-node.model';
       </span>
     </ng-container>
   `,
-    standalone: false
+    imports: [TreeMobxAutorunDirective, NgIf]
 })
 export class TreeNodeExpanderComponent {
   @Input() node: TreeNode;

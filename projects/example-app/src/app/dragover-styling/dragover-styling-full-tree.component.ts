@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  TreeNode,
-  TreeModel,
-  TREE_ACTIONS,
-  KEYS,
-  IActionMapping,
-  ITreeOptions
-} from 'angular-tree-component';
+import { TreeNode, TreeModel, TREE_ACTIONS, KEYS, IActionMapping, ITreeOptions, TreeModule } from 'angular-tree-component';
+import { FormsModule } from '@angular/forms';
 
 const actionMapping: IActionMapping = {
   mouse: {
@@ -110,7 +104,7 @@ const actionMapping: IActionMapping = {
     <button (click)="tree.treeModel.collapseAll()">Collapse All</button>
     <button (click)="activeNodes(tree.treeModel)">getActiveNodes()</button>
   `,
-    standalone: false
+    imports: [FormsModule, TreeModule]
 })
 export class DragOverStylingFullTreeComponent implements OnInit {
   nodes: any[];

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { ActionsDemoComponent } from './actions-demo/actions-demo.component';
+import { CodeExampleComponent } from '../../custom-elements/code/code-example.component';
 
 @Component({
     selector: 'app-actions',
     templateUrl: './actions.component.html',
     styleUrls: ['./actions.component.scss'],
-    standalone: false
+    imports: [ActionsDemoComponent, CodeExampleComponent]
 })
 export class ActionsComponent {
 

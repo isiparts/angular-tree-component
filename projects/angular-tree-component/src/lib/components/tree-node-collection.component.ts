@@ -1,15 +1,15 @@
-import {
-  Component,
-  Input,
-  ViewEncapsulation,
-  OnInit,
-  OnDestroy
-} from '@angular/core';
+import { Component, Input, ViewEncapsulation, OnInit, OnDestroy, forwardRef } from '@angular/core';
 import { reaction } from 'mobx';
 import { observable, computed, action } from '../mobx-angular/mobx-proxy';
 import { TreeVirtualScroll } from '../models/tree-virtual-scroll.model';
 import { TreeNode } from '../models/tree-node.model';
 import { TreeModel } from '../models/tree.model';
+import { TreeMobxAutorunDirective } from '../mobx-angular/tree-mobx-autorun.directive';
+import { NgIf, NgTemplateOutlet, NgFor } from '@angular/common';
+import { TreeNodeDropSlot } from './tree-node-drop-slot.component';
+import { TreeNodeWrapperComponent } from './tree-node-wrapper.component';
+import { TreeAnimateOpenDirective } from '../directives/tree-animate-open.directive';
+import { LoadingComponent } from './loading.component';
 
 
 @Component({
@@ -45,7 +45,7 @@ import { TreeModel } from '../models/tree.model';
       </div>
     </ng-container>
   `,
-    standalone: false
+    imports: [TreeMobxAutorunDirective, TreeAnimateOpenDirective, NgIf, forwardRef(() => TreeNodeCollectionComponent), LoadingComponent]
 })
 export class TreeNodeChildrenComponent {
   @Input() node: TreeNode;
@@ -68,7 +68,7 @@ export class TreeNodeChildrenComponent {
       </div>
     </ng-container>
   `,
-    standalone: false
+    imports: [TreeMobxAutorunDirective, NgFor, forwardRef(() => TreeNodeComponent)]
 })
 export class TreeNodeCollectionComponent implements OnInit, OnDestroy {
   @Input()
@@ -188,7 +188,7 @@ export class TreeNodeCollectionComponent implements OnInit, OnDestroy {
       </ng-container>
     </ng-container>
   `,
-    standalone: false
+    imports: [TreeMobxAutorunDirective, NgIf, TreeNodeDropSlot, TreeNodeWrapperComponent, TreeNodeChildrenComponent, NgTemplateOutlet]
 })
 export class TreeNodeComponent {
   @Input() node: TreeNode;

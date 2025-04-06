@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { AsyncComponent } from './async/async.component';
+import { CodeExampleComponent } from '../../custom-elements/code/code-example.component';
 
 @Component({
     selector: 'app-async-guide',
     templateUrl: './async-guide.component.html',
     styleUrls: ['./async-guide.component.scss'],
-    standalone: false
+    imports: [AsyncComponent, CodeExampleComponent]
 })
 export class AsyncGuideComponent {
 

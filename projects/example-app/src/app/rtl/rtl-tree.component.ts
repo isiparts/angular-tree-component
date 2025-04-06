@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-basictree',
@@ -7,7 +8,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   `,
     encapsulation: ViewEncapsulation.None,
     styles: [],
-    standalone: false
+    imports: [TreeModule]
 })
 export class RtlTreeComponent {
   options = {

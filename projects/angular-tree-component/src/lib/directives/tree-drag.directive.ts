@@ -3,10 +3,7 @@ import { TreeDraggedElement } from '../models/tree-dragged-element.model';
 
 const DRAG_OVER_CLASS = 'is-dragging-over';
 
-@Directive({
-    selector: '[treeDrag]',
-    standalone: false
-})
+@Directive({ selector: '[treeDrag]' })
 export class TreeDragDirective implements AfterViewInit, DoCheck, OnDestroy {
   @Input('treeDrag') draggedElement;
   @Input() treeDragEnabled;

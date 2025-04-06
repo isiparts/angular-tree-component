@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
-import { MatIconRegistry } from '@angular/material/icon';
+import { MatIconRegistry, MatIcon } from '@angular/material/icon';
 import { DomSanitizer, Title } from '@angular/platform-browser';
 import { NavigationNode } from './navigation/navigation.model';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { MatToolbar } from '@angular/material/toolbar';
+import { MatIconButton } from '@angular/material/button';
+import { MatSidenavContainer, MatSidenav, MatSidenavContent } from '@angular/material/sidenav';
+import { NgFor, NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: false
+    imports: [MatToolbar, MatIconButton, MatIcon, MatSidenavContainer, MatSidenav, NgFor, MatSidenavContent, NgClass, RouterOutlet]
 })
 export class AppComponent {
   baseTitle = 'Angular Tree Component';

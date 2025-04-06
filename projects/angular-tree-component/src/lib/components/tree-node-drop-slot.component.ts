@@ -1,5 +1,6 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { TreeNode } from '../models/tree-node.model';
+import { TreeDropDirective } from '../directives/tree-drop.directive';
 
 @Component({
     selector: 'TreeNodeDropSlot, tree-node-drop-slot',
@@ -13,7 +14,7 @@ import { TreeNode } from '../models/tree-node.model';
       [allowDragoverStyling]="true">
     </div>
   `,
-    standalone: false
+    imports: [TreeDropDirective]
 })
 export class TreeNodeDropSlot {
   @Input() node: TreeNode;

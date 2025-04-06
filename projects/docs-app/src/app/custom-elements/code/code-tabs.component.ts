@@ -1,6 +1,9 @@
 /* tslint:disable component-selector */
 import { AfterViewInit, Component, ElementRef, Input, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { CodeComponent } from './code.component';
+import { MatCard } from '@angular/material/card';
+import { MatTabGroup, MatTab, MatTabLabel } from '@angular/material/tabs';
+import { NgFor } from '@angular/common';
 
 export interface TabInfo {
   class: string;
@@ -42,7 +45,7 @@ export interface TabInfo {
       </mat-tab-group>
     </mat-card>
   `,
-    standalone: false
+    imports: [MatCard, MatTabGroup, NgFor, MatTab, MatTabLabel, CodeComponent]
 })
 export class CodeTabsComponent implements OnInit, AfterViewInit {
   tabs: TabInfo[];

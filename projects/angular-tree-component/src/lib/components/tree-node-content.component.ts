@@ -1,5 +1,6 @@
 import { Component, Input, ViewEncapsulation, TemplateRef } from '@angular/core';
 import { TreeNode } from '../models/tree-node.model';
+import { NgIf, NgTemplateOutlet } from '@angular/common';
 
 @Component({
     selector: 'tree-node-content',
@@ -10,7 +11,7 @@ import { TreeNode } from '../models/tree-node.model';
     [ngTemplateOutlet]="template"
     [ngTemplateOutletContext]="{ $implicit: node, node: node, index: index }">
   </ng-container>`,
-    standalone: false
+    imports: [NgIf, NgTemplateOutlet]
 })
 export class TreeNodeContent {
   @Input() node: TreeNode;

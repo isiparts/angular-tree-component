@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CodeExampleComponent } from '../../custom-elements/code/code-example.component';
 
 @Component({
     selector: 'app-styling',
     templateUrl: './styling.component.html',
     styleUrls: ['./styling.component.scss'],
-    standalone: false
+    imports: [CodeExampleComponent]
 })
 export class StylingComponent {
 

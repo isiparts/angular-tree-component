@@ -4,6 +4,9 @@ import { TreeDraggedElement } from '../models/tree-dragged-element.model';
 import { TreeOptions } from '../models/tree-options.model';
 import { ITreeOptions } from '../defs/api';
 import { TreeViewportComponent } from './tree-viewport.component';
+import { NgIf } from '@angular/common';
+import { TreeNodeCollectionComponent } from './tree-node-collection.component';
+import { TreeNodeDropSlot } from './tree-node-drop-slot.component';
 
 @Component({
     selector: 'Tree, tree-root',
@@ -35,7 +38,7 @@ import { TreeViewportComponent } from './tree-viewport.component';
           </div>
       </tree-viewport>
   `,
-    standalone: false
+    imports: [TreeViewportComponent, NgIf, TreeNodeCollectionComponent, TreeNodeDropSlot]
 })
 export class TreeComponent implements OnChanges {
   _nodes: any[];

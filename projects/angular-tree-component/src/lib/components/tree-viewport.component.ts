@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { TreeVirtualScroll } from '../models/tree-virtual-scroll.model';
 import { TREE_EVENTS } from '../constants/events';
+import { TreeMobxAutorunDirective } from '../mobx-angular/tree-mobx-autorun.directive';
 
 @Component({
     selector: 'tree-viewport',
@@ -19,7 +20,7 @@ import { TREE_EVENTS } from '../constants/events';
       </div>
     </ng-container>
   `,
-    standalone: false
+    imports: [TreeMobxAutorunDirective]
 })
 export class TreeViewportComponent implements AfterViewInit, OnInit, OnDestroy {
   setViewport = this.throttle(() => {

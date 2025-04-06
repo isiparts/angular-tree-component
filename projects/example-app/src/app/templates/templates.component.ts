@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ITreeOptions } from 'angular-tree-component';
+import { ITreeOptions, TreeModule } from 'angular-tree-component';
 
 @Component({
     selector: 'app-templates',
@@ -47,7 +47,7 @@ import { ITreeOptions } from 'angular-tree-component';
         '.root1Class { color: blue }',
         '.root2Class { color: red }'
     ],
-    standalone: false
+    imports: [TreeModule]
 })
 export class TemplatesComponent {
   nodes1 = [
