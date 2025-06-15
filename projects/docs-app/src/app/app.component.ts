@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatIconRegistry, MatIcon } from '@angular/material/icon';
 import { DomSanitizer, Title } from '@angular/platform-browser';
 import { NavigationNode } from './navigation/navigation.model';
@@ -16,6 +16,9 @@ import { NgFor, NgClass } from '@angular/common';
     imports: [MatToolbar, MatIconButton, MatIcon, MatSidenavContainer, MatSidenav, NgFor, MatSidenavContent, NgClass, RouterOutlet]
 })
 export class AppComponent {
+  private router = inject(Router);
+  private titleService = inject(Title);
+
   baseTitle = 'Angular Tree Component';
 
   nav: NavigationNode[] = [
@@ -60,12 +63,10 @@ export class AppComponent {
   ];
   currentNodes = [];
 
-  constructor(
-    iconRegistry: MatIconRegistry,
-    sanitizer: DomSanitizer,
-    private router: Router,
-    private titleService: Title,
-  ) {
+  constructor() {
+    const iconRegistry = inject(MatIconRegistry);
+    const sanitizer = inject(DomSanitizer);
+
     iconRegistry.addSvgIcon(
       'github',
       sanitizer.bypassSecurityTrustResourceUrl('assets/github-icon.svg')

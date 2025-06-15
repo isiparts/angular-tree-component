@@ -1,15 +1,4 @@
-import {
-  AfterViewInit,
-  Directive,
-  ElementRef,
-  EventEmitter,
-  HostListener,
-  Input,
-  NgZone,
-  OnDestroy,
-  Output,
-  Renderer2
-} from '@angular/core';
+import { AfterViewInit, Directive, ElementRef, EventEmitter, HostListener, Input, NgZone, OnDestroy, Output, Renderer2, inject } from '@angular/core';
 import { TreeDraggedElement } from '../models/tree-dragged-element.model';
 
 const DRAG_OVER_CLASS = 'is-dragging-over';
@@ -17,6 +6,11 @@ const DRAG_DISABLED_CLASS = 'is-dragging-over-disabled';
 
 @Directive({ selector: '[treeDrop]' })
 export class TreeDropDirective implements AfterViewInit, OnDestroy {
+  private el = inject(ElementRef);
+  private renderer = inject(Renderer2);
+  private treeDraggedElement = inject(TreeDraggedElement);
+  private ngZone = inject(NgZone);
+
   @Input() allowDragoverStyling = true;
   @Output('treeDrop') onDropCallback = new EventEmitter();
   @Output('treeDropDragOver') onDragOverCallback = new EventEmitter();
@@ -39,7 +33,7 @@ export class TreeDropDirective implements AfterViewInit, OnDestroy {
     return this._allowDrop(this.treeDraggedElement.get(), $event);
   }
 
-  constructor(private el: ElementRef, private renderer: Renderer2, private treeDraggedElement: TreeDraggedElement, private ngZone: NgZone) {
+  constructor() {
     this.dragOverEventHandler = this.onDragOver.bind(this);
     this.dragEnterEventHandler = this.onDragEnter.bind(this);
     this.dragLeaveEventHandler = this.onDragLeave.bind(this);

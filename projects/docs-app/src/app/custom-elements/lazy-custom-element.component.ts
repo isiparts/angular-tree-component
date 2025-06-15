@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, inject } from '@angular/core';
 import { ElementsLoader } from './elements-loader';
 import { Logger } from '../shared/logger.service';
 
@@ -7,13 +7,11 @@ import { Logger } from '../shared/logger.service';
     template: ''
 })
 export class LazyCustomElementComponent implements OnInit {
-  @Input() selector = '';
+  private elementRef = inject(ElementRef);
+  private elementsLoader = inject(ElementsLoader);
+  private logger = inject(Logger);
 
-  constructor(
-    private elementRef: ElementRef,
-    private elementsLoader: ElementsLoader,
-    private logger: Logger,
-  ) {}
+  @Input() selector = '';
 
   ngOnInit() {
     if (!this.selector || /[^\w-]/.test(this.selector)) {

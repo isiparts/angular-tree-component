@@ -1,4 +1,4 @@
-import { Component, ContentChild, EventEmitter, HostListener, Input, OnChanges, Output, TemplateRef, ViewChild } from '@angular/core';
+import { Component, ContentChild, EventEmitter, HostListener, Input, OnChanges, Output, TemplateRef, ViewChild, inject } from '@angular/core';
 import { TreeModel } from '../models/tree.model';
 import { TreeDraggedElement } from '../models/tree-dragged-element.model';
 import { TreeOptions } from '../models/tree-options.model';
@@ -41,6 +41,9 @@ import { TreeNodeDropSlot } from './tree-node-drop-slot.component';
     imports: [TreeViewportComponent, NgIf, TreeNodeCollectionComponent, TreeNodeDropSlot]
 })
 export class TreeComponent implements OnChanges {
+  treeModel = inject(TreeModel);
+  treeDraggedElement = inject(TreeDraggedElement);
+
   _nodes: any[];
   _options: TreeOptions;
 
@@ -83,9 +86,9 @@ export class TreeComponent implements OnChanges {
   @Output() event;
   @Output() stateChange;
 
-  constructor(
-    public treeModel: TreeModel,
-    public treeDraggedElement: TreeDraggedElement) {
+  constructor() {
+    const treeModel = this.treeModel;
+
 
     treeModel.eventNames.forEach((name) => this[name] = new EventEmitter());
     treeModel.subscribeToState((state) => this.stateChange.emit(state));

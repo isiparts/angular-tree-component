@@ -32,10 +32,11 @@ Add css to `styles.scss` or include in `angular.json`:
 
 ## Angular supported version
 
-angular-tree-component supports angular 14+ versions, and AoT compilation.
+angular-tree-component supports angular 12+ versions, and AoT compilation.
 
 versioning has been change to align with supported Angular version.
 so:\
+v20.\*.\* = Angular 20   
 v19.\*.\* = Angular 19  
 v18.\*.\* = Angular 18  
 v17.\*.\* = Angular 17  

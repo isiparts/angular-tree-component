@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, OnChanges, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnChanges, Output, ViewChild, inject } from '@angular/core';
 import { PrettyPrinter } from './pretty-printer.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { tap } from 'rxjs/operators';
@@ -43,6 +43,11 @@ import { NgIf } from '@angular/common';
     imports: [NgIf]
 })
 export class CodeComponent implements OnChanges {
+  private snackbar = inject(MatSnackBar);
+  private pretty = inject(PrettyPrinter);
+  private copier = inject(CopierService);
+  private logger = inject(Logger);
+
   ariaLabel = '';
 
   /** The code to be copied when clicking the copy button, this should not be HTML encoded */
@@ -94,12 +99,6 @@ export class CodeComponent implements OnChanges {
 
   /** The element in the template that will display the formatted code. */
   @ViewChild('codeContainer', { static: true }) codeContainer: ElementRef;
-
-  constructor(
-    private snackbar: MatSnackBar,
-    private pretty: PrettyPrinter,
-    private copier: CopierService,
-    private logger: Logger) {}
 
   ngOnChanges() {
     // If some inputs have changed and there is code displayed, update the view with the latest
