@@ -33,7 +33,19 @@
     "mobx": "~4.14.1",
     "tslib": "^2.5.0"
   },
-  "devDependencies": {
+  "exports": {
+    "./css/angular-tree-component.css": {
+      "style": "./css/angular-tree-component.css"
+    },
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./fesm2022/ali-hm-angular-tree-component.mjs"
+    }
   },
-  "exports": { "./css/angular-tree-component.css": { "style": "./css/angular-tree-component.css" } }
+  "module": "fesm2022/ali-hm-angular-tree-component.mjs",
+  "typings": "index.d.ts",
+  "sideEffects": false
 }

@@ -48,8 +48,8 @@ npm-debug.log
 /public/__build__/
 /src/*/__build__/
 /__build__/**
-/public/dist/
-/src/*/dist/
+#/public/dist/
+#/src/*/dist/
 .webpack.json
 /projects/**/package-lock.json
 
@@ -60,7 +60,7 @@ npm-debug.log
 .idea/
 *.swp
 
-/dist
+#/dist
 /pack
 
 compiled
