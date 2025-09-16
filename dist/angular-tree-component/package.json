@@ -1,6 +1,6 @@
 {
-  "name": "@ali-hm/angular-tree-component",
-  "version": "20.1.10",
+  "name": "angular-tree-component-isi",
+  "version": "20.1.11",
   "description": "angular-tree-component fork",
   "author": "ali-hm",
   "homepage": "https://github.com/ali-hm/angular-tree-component",
@@ -42,10 +42,10 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "default": "./fesm2022/ali-hm-angular-tree-component.mjs"
+      "default": "./fesm2022/angular-tree-component-isi.mjs"
     }
   },
-  "module": "fesm2022/ali-hm-angular-tree-component.mjs",
+  "module": "fesm2022/angular-tree-component-isi.mjs",
   "typings": "index.d.ts",
   "sideEffects": false
 }
