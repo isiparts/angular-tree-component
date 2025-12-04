@@ -11,7 +11,14 @@ import {
   IAllowDragFn,
   IAllowDropFn,
   ITreeOptions,
-  ITreeState
+  ITreeState,
+  IDType,
+  IDTypeDictionary,
+  TreeNode as TreeNodeType,
+  INodeHeightFn,
+  ITreeNode,
+  ITreeModel,
+  ITreeNodeDrag
 } from './defs/api';
 import { KEYS } from './constants/keys';
 import { TreeModel } from './models/tree.model';
@@ -35,7 +42,7 @@ import { TreeAnimateOpenDirective } from './directives/tree-animate-open.directi
 
 @NgModule({
   declarations: [
-    
+
   ],
   exports: [
     TreeComponent,
@@ -54,7 +61,7 @@ import { TreeAnimateOpenDirective } from './directives/tree-animate-open.directi
     TreeAnimateOpenDirective,
     TreeMobxAutorunDirective
   ],
-  imports: [CommonModule,TreeComponent,
+  imports: [CommonModule, TreeComponent,
     TreeNodeComponent,
     TreeNodeContent,
     LoadingComponent,
@@ -71,7 +78,7 @@ import { TreeAnimateOpenDirective } from './directives/tree-animate-open.directi
     TreeMobxAutorunDirective],
   providers: []
 })
-export class TreeModule {}
+export class TreeModule { }
 
 export {
   TreeModel,
@@ -100,5 +107,13 @@ export {
   TreeViewportComponent,
   TreeNodeCheckboxComponent,
   ITreeState,
-  TreeMobxAutorunDirective
+  TreeMobxAutorunDirective,
+  // Additional types from api.ts
+  IDType,
+  IDTypeDictionary,
+  TreeNodeType,
+  INodeHeightFn,
+  ITreeNode,
+  ITreeModel,
+  ITreeNodeDrag
 };

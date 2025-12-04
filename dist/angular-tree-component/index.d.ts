@@ -640,6 +640,20 @@ interface ITreeModel {
     setState(state: ITreeState): any;
     subscribeToState(fn: (state: ITreeState) => any): any;
 }
+/**
+ * This is the interface of the TreeNodeDrag service
+ */
+interface ITreeNodeDrag {
+    /**
+     * Gets the current dragged node. Useful for overriding the drop action.
+     * @param node  The parent node of the current dragged node
+     * @param index  The index inside parent's children, of the current dragged node
+     */
+    getDragNode(): {
+        node: TreeNode$1;
+        index: number;
+    };
+}
 
 declare class TreeModel implements ITreeModel, OnDestroy {
     static focusedTree: any;
@@ -1108,4 +1122,4 @@ declare class TreeModule {
 }
 
 export { KEYS, LoadingComponent, TREE_ACTIONS, TreeAnimateOpenDirective, TreeComponent, TreeDragDirective, TreeDraggedElement, TreeDropDirective, TreeMobxAutorunDirective, TreeModel, TreeModule, TreeNode, TreeNodeCheckboxComponent, TreeNodeChildrenComponent, TreeNodeCollectionComponent, TreeNodeComponent, TreeNodeContent, TreeNodeDropSlot, TreeNodeExpanderComponent, TreeNodeWrapperComponent, TreeViewportComponent, TreeVirtualScroll };
-export type { IActionHandler, IActionMapping, IAllowDragFn, IAllowDropFn, ITreeOptions, ITreeState };
+export type { IActionHandler, IActionMapping, IAllowDragFn, IAllowDropFn, IDType, IDTypeDictionary, INodeHeightFn, ITreeModel, ITreeNode, ITreeNodeDrag, ITreeOptions, ITreeState, TreeNode$1 as TreeNodeType };
