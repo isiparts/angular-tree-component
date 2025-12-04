@@ -32,10 +32,10 @@ class TreeMobxAutorunDirective {
             this.dispose();
         }
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeMobxAutorunDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
-    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "20.3.0", type: TreeMobxAutorunDirective, isStandalone: true, selector: "[treeMobxAutorun]", inputs: { treeMobxAutorun: "treeMobxAutorun" }, ngImport: i0 });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeMobxAutorunDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "19.2.17", type: TreeMobxAutorunDirective, isStandalone: true, selector: "[treeMobxAutorun]", inputs: { treeMobxAutorun: "treeMobxAutorun" }, ngImport: i0 });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeMobxAutorunDirective, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeMobxAutorunDirective, decorators: [{
             type: Directive,
             args: [{ selector: '[treeMobxAutorun]' }]
         }], propDecorators: { treeMobxAutorun: [{
@@ -1044,8 +1044,8 @@ class TreeModel {
     _setActiveNodeMulti(node, value) {
         this.activeNodeIds = Object.assign({}, this.activeNodeIds, { [node.id]: value });
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeModel, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeModel });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeModel, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeModel });
 }
 __decorate([
     observable$1
@@ -1146,7 +1146,7 @@ __decorate([
 __decorate([
     action$1
 ], TreeModel.prototype, "setState", null);
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeModel, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeModel, decorators: [{
             type: Injectable
         }], propDecorators: { roots: [], expandedNodeIds: [], selectedLeafNodeIds: [], activeNodeIds: [], hiddenNodeIds: [], focusedNodeId: [], virtualRoot: [], focusedNode: [], expandedNodes: [], activeNodes: [], hiddenNodes: [], selectedLeafNodes: [], setData: [], update: [], setFocusedNode: [], setFocus: [], doForAll: [], focusNextNode: [], focusPreviousNode: [], focusDrillDown: [], focusDrillUp: [], setActiveNode: [], setSelectedNode: [], setExpandedNode: [], expandAll: [], collapseAll: [], setIsHidden: [], setHiddenNodeIds: [], filterNodes: [], clearFilter: [], moveNode: [], copyNode: [], setState: [] } });
 
@@ -1161,10 +1161,10 @@ class TreeDraggedElement {
     isDragging() {
         return !!this.get();
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeDraggedElement, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeDraggedElement, providedIn: 'root' });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeDraggedElement, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeDraggedElement, providedIn: 'root' });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeDraggedElement, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeDraggedElement, decorators: [{
             type: Injectable,
             args: [{
                     providedIn: 'root'
@@ -1308,8 +1308,8 @@ class TreeVirtualScroll {
         if (this.y > maxY)
             this._setYBlocks(maxY / Y_EPSILON);
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeVirtualScroll, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
-    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeVirtualScroll });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeVirtualScroll, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
+    static ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeVirtualScroll });
 }
 __decorate([
     observable$1
@@ -1338,7 +1338,7 @@ __decorate([
 __decorate([
     action$1
 ], TreeVirtualScroll.prototype, "scrollIntoView", null);
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeVirtualScroll, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeVirtualScroll, decorators: [{
             type: Injectable
         }], ctorParameters: () => [], propDecorators: { yBlocks: [], x: [], viewportHeight: [], y: [], totalHeight: [], _setYBlocks: [], recalcPositions: [], setViewport: [], scrollIntoView: [] } });
 function binarySearch(nodes, condition, firstIndex = 0) {
@@ -1362,8 +1362,8 @@ function binarySearch(nodes, condition, firstIndex = 0) {
 class LoadingComponent {
     template;
     node;
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: LoadingComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: LoadingComponent, isStandalone: true, selector: "tree-loading-component", inputs: { template: "template", node: "node" }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: LoadingComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: LoadingComponent, isStandalone: true, selector: "tree-loading-component", inputs: { template: "template", node: "node" }, ngImport: i0, template: `
     <span *ngIf="!template">loading...</span>
     <ng-container
       [ngTemplateOutlet]="template"
@@ -1371,7 +1371,7 @@ class LoadingComponent {
     </ng-container>
   `, isInline: true, dependencies: [{ kind: "directive", type: NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "directive", type: NgTemplateOutlet, selector: "[ngTemplateOutlet]", inputs: ["ngTemplateOutletContext", "ngTemplateOutlet", "ngTemplateOutletInjector"] }], encapsulation: i0.ViewEncapsulation.None });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: LoadingComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: LoadingComponent, decorators: [{
             type: Component,
             args: [{
                     encapsulation: ViewEncapsulation.None,
@@ -1432,8 +1432,8 @@ class TreeViewportComponent {
             }
         };
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeViewportComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeViewportComponent, isStandalone: true, selector: "tree-viewport", providers: [TreeVirtualScroll], ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeViewportComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeViewportComponent, isStandalone: true, selector: "tree-viewport", providers: [TreeVirtualScroll], ngImport: i0, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
       <div [style.height]="getTotalHeight()">
         <ng-content></ng-content>
@@ -1441,7 +1441,7 @@ class TreeViewportComponent {
     </ng-container>
   `, isInline: true, dependencies: [{ kind: "directive", type: TreeMobxAutorunDirective, selector: "[treeMobxAutorun]", inputs: ["treeMobxAutorun"] }] });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeViewportComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeViewportComponent, decorators: [{
             type: Component,
             args: [{ selector: 'tree-viewport', providers: [TreeVirtualScroll], template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
@@ -1564,10 +1564,10 @@ class TreeDropDirective {
     removeDisabledClass() {
         this.renderer.removeClass(this.el.nativeElement, DRAG_DISABLED_CLASS);
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeDropDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
-    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "20.3.0", type: TreeDropDirective, isStandalone: true, selector: "[treeDrop]", inputs: { allowDragoverStyling: "allowDragoverStyling", treeAllowDrop: "treeAllowDrop" }, outputs: { onDropCallback: "treeDrop", onDragOverCallback: "treeDropDragOver", onDragLeaveCallback: "treeDropDragLeave", onDragEnterCallback: "treeDropDragEnter" }, host: { listeners: { "drop": "onDrop($event)" } }, ngImport: i0 });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeDropDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "19.2.17", type: TreeDropDirective, isStandalone: true, selector: "[treeDrop]", inputs: { allowDragoverStyling: "allowDragoverStyling", treeAllowDrop: "treeAllowDrop" }, outputs: { onDropCallback: "treeDrop", onDragOverCallback: "treeDropDragOver", onDragLeaveCallback: "treeDropDragLeave", onDragEnterCallback: "treeDropDragEnter" }, host: { listeners: { "drop": "onDrop($event)" } }, ngImport: i0 });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeDropDirective, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeDropDirective, decorators: [{
             type: Directive,
             args: [{ selector: '[treeDrop]' }]
         }], ctorParameters: () => [], propDecorators: { allowDragoverStyling: [{
@@ -1603,8 +1603,8 @@ class TreeNodeDropSlot {
     allowDrop(element, $event) {
         return this.node.options.allowDrop(element, { parent: this.node, index: this.dropIndex }, $event);
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeDropSlot, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeNodeDropSlot, isStandalone: true, selector: "TreeNodeDropSlot, tree-node-drop-slot", inputs: { node: "node", dropIndex: "dropIndex" }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeDropSlot, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeNodeDropSlot, isStandalone: true, selector: "TreeNodeDropSlot, tree-node-drop-slot", inputs: { node: "node", dropIndex: "dropIndex" }, ngImport: i0, template: `
     <div
       class="node-drop-slot"
       (treeDrop)="onDrop($event)"
@@ -1613,7 +1613,7 @@ class TreeNodeDropSlot {
     </div>
   `, isInline: true, dependencies: [{ kind: "directive", type: TreeDropDirective, selector: "[treeDrop]", inputs: ["allowDragoverStyling", "treeAllowDrop"], outputs: ["treeDrop", "treeDropDragOver", "treeDropDragLeave", "treeDropDragEnter"] }], encapsulation: i0.ViewEncapsulation.None });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeDropSlot, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeDropSlot, decorators: [{
             type: Component,
             args: [{ selector: 'TreeNodeDropSlot, tree-node-drop-slot', encapsulation: ViewEncapsulation.None, template: `
     <div
@@ -1631,8 +1631,8 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImpor
 
 class TreeNodeCheckboxComponent {
     node;
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeCheckboxComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeNodeCheckboxComponent, isStandalone: true, selector: "tree-node-checkbox", inputs: { node: "node" }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeCheckboxComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeNodeCheckboxComponent, isStandalone: true, selector: "tree-node-checkbox", inputs: { node: "node" }, ngImport: i0, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
       <input
         class="tree-node-checkbox"
@@ -1644,7 +1644,7 @@ class TreeNodeCheckboxComponent {
     </ng-container>
   `, isInline: true, dependencies: [{ kind: "directive", type: TreeMobxAutorunDirective, selector: "[treeMobxAutorun]", inputs: ["treeMobxAutorun"] }], encapsulation: i0.ViewEncapsulation.None });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeCheckboxComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeCheckboxComponent, decorators: [{
             type: Component,
             args: [{ selector: 'tree-node-checkbox', encapsulation: ViewEncapsulation.None, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
@@ -1663,8 +1663,8 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImpor
 
 class TreeNodeExpanderComponent {
     node;
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeExpanderComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeNodeExpanderComponent, isStandalone: true, selector: "tree-node-expander", inputs: { node: "node" }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeExpanderComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeNodeExpanderComponent, isStandalone: true, selector: "tree-node-expander", inputs: { node: "node" }, ngImport: i0, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
       <span
         *ngIf="node.hasChildren"
@@ -1680,7 +1680,7 @@ class TreeNodeExpanderComponent {
     </ng-container>
   `, isInline: true, dependencies: [{ kind: "directive", type: TreeMobxAutorunDirective, selector: "[treeMobxAutorun]", inputs: ["treeMobxAutorun"] }, { kind: "directive", type: NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }], encapsulation: i0.ViewEncapsulation.None });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeExpanderComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeExpanderComponent, decorators: [{
             type: Component,
             args: [{ selector: 'tree-node-expander', encapsulation: ViewEncapsulation.None, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
@@ -1745,10 +1745,10 @@ class TreeDragDirective {
         }
         this.treeDraggedElement.set(null);
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeDragDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
-    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "20.3.0", type: TreeDragDirective, isStandalone: true, selector: "[treeDrag]", inputs: { draggedElement: ["treeDrag", "draggedElement"], treeDragEnabled: "treeDragEnabled" }, host: { listeners: { "dragstart": "onDragStart($event)", "dragend": "onDragEnd()" } }, ngImport: i0 });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeDragDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "19.2.17", type: TreeDragDirective, isStandalone: true, selector: "[treeDrag]", inputs: { draggedElement: ["treeDrag", "draggedElement"], treeDragEnabled: "treeDragEnabled" }, host: { listeners: { "dragstart": "onDragStart($event)", "dragend": "onDragEnd()" } }, ngImport: i0 });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeDragDirective, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeDragDirective, decorators: [{
             type: Directive,
             args: [{ selector: '[treeDrag]' }]
         }], ctorParameters: () => [], propDecorators: { draggedElement: [{
@@ -1768,15 +1768,15 @@ class TreeNodeContent {
     node;
     index;
     template;
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeContent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeNodeContent, isStandalone: true, selector: "tree-node-content", inputs: { node: "node", index: "index", template: "template" }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeContent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeNodeContent, isStandalone: true, selector: "tree-node-content", inputs: { node: "node", index: "index", template: "template" }, ngImport: i0, template: `
   <span *ngIf="!template">{{ node.displayField }}</span>
   <ng-container
     [ngTemplateOutlet]="template"
     [ngTemplateOutletContext]="{ $implicit: node, node: node, index: index }">
   </ng-container>`, isInline: true, dependencies: [{ kind: "directive", type: NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "directive", type: NgTemplateOutlet, selector: "[ngTemplateOutlet]", inputs: ["ngTemplateOutletContext", "ngTemplateOutlet", "ngTemplateOutletInjector"] }], encapsulation: i0.ViewEncapsulation.None });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeContent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeContent, decorators: [{
             type: Component,
             args: [{
                     selector: 'tree-node-content',
@@ -1801,8 +1801,8 @@ class TreeNodeWrapperComponent {
     node;
     index;
     templates;
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeWrapperComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeNodeWrapperComponent, isStandalone: true, selector: "tree-node-wrapper", inputs: { node: "node", index: "index", templates: "templates" }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeWrapperComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeNodeWrapperComponent, isStandalone: true, selector: "tree-node-wrapper", inputs: { node: "node", index: "index", templates: "templates" }, ngImport: i0, template: `
       <div *ngIf="!templates.treeNodeWrapperTemplate" class="node-wrapper" [style.padding-left]="node.getNodePadding()" [attr.data-node-id]="node.id">
           <tree-node-checkbox *ngIf="node.options.useCheckbox" [node]="node"></tree-node-checkbox>
           <tree-node-expander [node]="node"></tree-node-expander>
@@ -1833,7 +1833,7 @@ class TreeNodeWrapperComponent {
       </ng-container>
   `, isInline: true, dependencies: [{ kind: "directive", type: NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "component", type: TreeNodeCheckboxComponent, selector: "tree-node-checkbox", inputs: ["node"] }, { kind: "component", type: TreeNodeExpanderComponent, selector: "tree-node-expander", inputs: ["node"] }, { kind: "directive", type: TreeDragDirective, selector: "[treeDrag]", inputs: ["treeDrag", "treeDragEnabled"] }, { kind: "directive", type: TreeDropDirective, selector: "[treeDrop]", inputs: ["allowDragoverStyling", "treeAllowDrop"], outputs: ["treeDrop", "treeDropDragOver", "treeDropDragLeave", "treeDropDragEnter"] }, { kind: "component", type: TreeNodeContent, selector: "tree-node-content", inputs: ["node", "index", "template"] }, { kind: "directive", type: NgTemplateOutlet, selector: "[ngTemplateOutlet]", inputs: ["ngTemplateOutletContext", "ngTemplateOutlet", "ngTemplateOutletInjector"] }], encapsulation: i0.ViewEncapsulation.None });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeWrapperComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeWrapperComponent, decorators: [{
             type: Component,
             args: [{ selector: 'tree-node-wrapper', encapsulation: ViewEncapsulation.None, template: `
       <div *ngIf="!templates.treeNodeWrapperTemplate" class="node-wrapper" [style.padding-left]="node.getNodePadding()" [attr.data-node-id]="node.id">
@@ -1953,10 +1953,10 @@ class TreeAnimateOpenDirective {
             }
         }, 17);
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeAnimateOpenDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
-    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "20.3.0", type: TreeAnimateOpenDirective, isStandalone: true, selector: "[treeAnimateOpen]", inputs: { animateSpeed: ["treeAnimateOpenSpeed", "animateSpeed"], animateAcceleration: ["treeAnimateOpenAcceleration", "animateAcceleration"], isEnabled: ["treeAnimateOpenEnabled", "isEnabled"], isOpen: ["treeAnimateOpen", "isOpen"] }, ngImport: i0 });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeAnimateOpenDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "19.2.17", type: TreeAnimateOpenDirective, isStandalone: true, selector: "[treeAnimateOpen]", inputs: { animateSpeed: ["treeAnimateOpenSpeed", "animateSpeed"], animateAcceleration: ["treeAnimateOpenAcceleration", "animateAcceleration"], isEnabled: ["treeAnimateOpenEnabled", "isEnabled"], isOpen: ["treeAnimateOpen", "isOpen"] }, ngImport: i0 });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeAnimateOpenDirective, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeAnimateOpenDirective, decorators: [{
             type: Directive,
             args: [{ selector: '[treeAnimateOpen]' }]
         }], propDecorators: { animateSpeed: [{
@@ -1976,8 +1976,8 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImpor
 class TreeNodeChildrenComponent {
     node;
     templates;
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeChildrenComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeNodeChildrenComponent, isStandalone: true, selector: "tree-node-children", inputs: { node: "node", templates: "templates" }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeChildrenComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeNodeChildrenComponent, isStandalone: true, selector: "tree-node-children", inputs: { node: "node", templates: "templates" }, ngImport: i0, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
       <div
         [class.tree-children]="true"
@@ -2007,7 +2007,7 @@ class TreeNodeChildrenComponent {
     </ng-container>
   `, isInline: true, dependencies: [{ kind: "directive", type: i0.forwardRef(() => TreeMobxAutorunDirective), selector: "[treeMobxAutorun]", inputs: ["treeMobxAutorun"] }, { kind: "directive", type: i0.forwardRef(() => TreeAnimateOpenDirective), selector: "[treeAnimateOpen]", inputs: ["treeAnimateOpenSpeed", "treeAnimateOpenAcceleration", "treeAnimateOpenEnabled", "treeAnimateOpen"] }, { kind: "directive", type: i0.forwardRef(() => NgIf), selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "component", type: i0.forwardRef(() => TreeNodeCollectionComponent), selector: "tree-node-collection", inputs: ["nodes", "treeModel", "templates"] }, { kind: "component", type: i0.forwardRef(() => LoadingComponent), selector: "tree-loading-component", inputs: ["template", "node"] }], encapsulation: i0.ViewEncapsulation.None });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeChildrenComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeChildrenComponent, decorators: [{
             type: Component,
             args: [{ selector: 'tree-node-children', encapsulation: ViewEncapsulation.None, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
@@ -2090,8 +2090,8 @@ class TreeNodeCollectionComponent {
     trackNode(index, node) {
         return node.id;
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeCollectionComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeNodeCollectionComponent, isStandalone: true, selector: "tree-node-collection", inputs: { nodes: "nodes", treeModel: "treeModel", templates: "templates" }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeCollectionComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeNodeCollectionComponent, isStandalone: true, selector: "tree-node-collection", inputs: { nodes: "nodes", treeModel: "treeModel", templates: "templates" }, ngImport: i0, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
       <div [style.margin-top]="marginTop">
         <tree-node
@@ -2117,7 +2117,7 @@ __decorate([
 __decorate([
     action
 ], TreeNodeCollectionComponent.prototype, "setNodes", null);
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeCollectionComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeCollectionComponent, decorators: [{
             type: Component,
             args: [{
                     selector: 'tree-node-collection',
@@ -2148,8 +2148,8 @@ class TreeNodeComponent {
     node;
     index;
     templates;
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeNodeComponent, isStandalone: true, selector: "TreeNode, tree-node", inputs: { node: "node", index: "index", templates: "templates" }, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeNodeComponent, isStandalone: true, selector: "TreeNode, tree-node", inputs: { node: "node", index: "index", templates: "templates" }, ngImport: i0, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
       <div
         *ngIf="!templates.treeNodeFullTemplate"
@@ -2195,7 +2195,7 @@ class TreeNodeComponent {
     </ng-container>
   `, isInline: true, dependencies: [{ kind: "directive", type: TreeMobxAutorunDirective, selector: "[treeMobxAutorun]", inputs: ["treeMobxAutorun"] }, { kind: "directive", type: NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "component", type: TreeNodeDropSlot, selector: "TreeNodeDropSlot, tree-node-drop-slot", inputs: ["node", "dropIndex"] }, { kind: "component", type: TreeNodeWrapperComponent, selector: "tree-node-wrapper", inputs: ["node", "index", "templates"] }, { kind: "component", type: TreeNodeChildrenComponent, selector: "tree-node-children", inputs: ["node", "templates"] }, { kind: "directive", type: NgTemplateOutlet, selector: "[ngTemplateOutlet]", inputs: ["ngTemplateOutletContext", "ngTemplateOutlet", "ngTemplateOutletInjector"] }], encapsulation: i0.ViewEncapsulation.None });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeNodeComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeNodeComponent, decorators: [{
             type: Component,
             args: [{ selector: 'TreeNode, tree-node', encapsulation: ViewEncapsulation.None, template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
@@ -2331,8 +2331,8 @@ class TreeComponent {
             return obj;
         }, {});
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.0", type: TreeComponent, isStandalone: true, selector: "Tree, tree-root", inputs: { nodes: "nodes", options: "options", focused: "focused", state: "state" }, outputs: { toggleExpanded: "toggleExpanded", activate: "activate", deactivate: "deactivate", nodeActivate: "nodeActivate", nodeDeactivate: "nodeDeactivate", select: "select", deselect: "deselect", focus: "focus", blur: "blur", updateData: "updateData", initialized: "initialized", moveNode: "moveNode", copyNode: "copyNode", loadNodeChildren: "loadNodeChildren", changeFilter: "changeFilter", event: "event", stateChange: "stateChange" }, host: { listeners: { "body: keydown": "onKeydown($event)", "body: mousedown": "onMousedown($event)" } }, providers: [TreeModel], queries: [{ propertyName: "loadingTemplate", first: true, predicate: ["loadingTemplate"], descendants: true }, { propertyName: "treeNodeTemplate", first: true, predicate: ["treeNodeTemplate"], descendants: true }, { propertyName: "treeNodeWrapperTemplate", first: true, predicate: ["treeNodeWrapperTemplate"], descendants: true }, { propertyName: "treeNodeFullTemplate", first: true, predicate: ["treeNodeFullTemplate"], descendants: true }], viewQueries: [{ propertyName: "viewportComponent", first: true, predicate: ["viewport"], descendants: true }], usesOnChanges: true, ngImport: i0, template: `
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "19.2.17", type: TreeComponent, isStandalone: true, selector: "Tree, tree-root", inputs: { nodes: "nodes", options: "options", focused: "focused", state: "state" }, outputs: { toggleExpanded: "toggleExpanded", activate: "activate", deactivate: "deactivate", nodeActivate: "nodeActivate", nodeDeactivate: "nodeDeactivate", select: "select", deselect: "deselect", focus: "focus", blur: "blur", updateData: "updateData", initialized: "initialized", moveNode: "moveNode", copyNode: "copyNode", loadNodeChildren: "loadNodeChildren", changeFilter: "changeFilter", event: "event", stateChange: "stateChange" }, host: { listeners: { "body: keydown": "onKeydown($event)", "body: mousedown": "onMousedown($event)" } }, providers: [TreeModel], queries: [{ propertyName: "loadingTemplate", first: true, predicate: ["loadingTemplate"], descendants: true }, { propertyName: "treeNodeTemplate", first: true, predicate: ["treeNodeTemplate"], descendants: true }, { propertyName: "treeNodeWrapperTemplate", first: true, predicate: ["treeNodeWrapperTemplate"], descendants: true }, { propertyName: "treeNodeFullTemplate", first: true, predicate: ["treeNodeFullTemplate"], descendants: true }], viewQueries: [{ propertyName: "viewportComponent", first: true, predicate: ["viewport"], descendants: true }], usesOnChanges: true, ngImport: i0, template: `
       <tree-viewport #viewport>
           <div
                   class="angular-tree-component"
@@ -2359,7 +2359,7 @@ class TreeComponent {
       </tree-viewport>
   `, isInline: true, dependencies: [{ kind: "component", type: TreeViewportComponent, selector: "tree-viewport" }, { kind: "directive", type: NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "component", type: TreeNodeCollectionComponent, selector: "tree-node-collection", inputs: ["nodes", "treeModel", "templates"] }, { kind: "component", type: TreeNodeDropSlot, selector: "TreeNodeDropSlot, tree-node-drop-slot", inputs: ["node", "dropIndex"] }] });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeComponent, decorators: [{
             type: Component,
             args: [{ selector: 'Tree, tree-root', providers: [TreeModel], template: `
       <tree-viewport #viewport>
@@ -2453,8 +2453,8 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImpor
             }] } });
 
 class TreeModule {
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-    static ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "20.3.0", ngImport: i0, type: TreeModule, imports: [CommonModule, TreeComponent,
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+    static ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "19.2.17", ngImport: i0, type: TreeModule, imports: [CommonModule, TreeComponent,
             TreeNodeComponent,
             TreeNodeContent,
             LoadingComponent,
@@ -2483,9 +2483,9 @@ class TreeModule {
             TreeNodeCheckboxComponent,
             TreeAnimateOpenDirective,
             TreeMobxAutorunDirective] });
-    static ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeModule, imports: [CommonModule] });
+    static ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeModule, imports: [CommonModule] });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.0", ngImport: i0, type: TreeModule, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.17", ngImport: i0, type: TreeModule, decorators: [{
             type: NgModule,
             args: [{
                     declarations: [],
