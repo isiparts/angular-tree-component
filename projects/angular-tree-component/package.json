@@ -1,6 +1,6 @@
 {
   "name": "angular-tree-component-isi",
-  "version": "20.1.12",
+  "version": "20.2.1",
   "description": "angular-tree-component fork",
   "author": "ali-hm",
   "homepage": "https://github.com/isiparts/angular-tree-component",
@@ -33,7 +33,10 @@
     "mobx": "~4.14.1",
     "tslib": "^2.5.0"
   },
-  "devDependencies": {
-  },
-  "exports": { "./css/angular-tree-component.css": { "style": "./css/angular-tree-component.css" } }
+  "devDependencies": {},
+  "exports": {
+    "./css/angular-tree-component.css": {
+      "style": "./css/angular-tree-component.css"
+    }
+  }
 }

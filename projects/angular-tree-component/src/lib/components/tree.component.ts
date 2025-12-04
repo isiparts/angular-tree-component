@@ -15,7 +15,6 @@ import { TreeNodeDropSlot } from './tree-node-drop-slot.component';
   template: `
       <tree-viewport #viewport>
           <div
-                  [attr.data-tree-id]="treeModel.options.id"
                   class="angular-tree-component"
                   [class.node-dragging]="treeDraggedElement.isDragging()"
                   [class.angular-tree-component-rtl]="treeModel.options.rtl">

@@ -1,6 +1,6 @@
 {
   "name": "angular-tree-component-isi",
-  "version": "20.2.0",
+  "version": "20.2.1",
   "description": "angular-tree-component fork",
   "author": "ali-hm",
   "homepage": "https://github.com/isiparts/angular-tree-component",
@@ -42,7 +42,8 @@
     "e2e:tsc": "../node_modules/.bin/tsc --p e2e/tsconfig.json",
     "publish:release": "npm publish ./dist/angular-tree-component --access=public",
     "publish:next": "npm publish ./dist/angular-tree-component --tag next --access=public",
-    "pack": "npm pack ./dist/angular-tree-component --pack-destination=\"./pack\""
+    "pack": "npm pack ./dist/angular-tree-component --pack-destination=\"./pack\"",
+    "packagr": "ng-packagr -p projects/angular-tree-component/ng-package.json"
   },
   "files": [
     "dist/"
