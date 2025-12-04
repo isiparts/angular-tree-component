@@ -9,12 +9,13 @@ import { TreeNodeCollectionComponent } from './tree-node-collection.component';
 import { TreeNodeDropSlot } from './tree-node-drop-slot.component';
 
 @Component({
-    selector: 'Tree, tree-root',
-    providers: [TreeModel],
-    styles: [],
-    template: `
+  selector: 'Tree, tree-root',
+  providers: [TreeModel],
+  styles: [],
+  template: `
       <tree-viewport #viewport>
           <div
+                  [attr.data-tree-id]="treeModel.options.id"
                   class="angular-tree-component"
                   [class.node-dragging]="treeDraggedElement.isDragging()"
                   [class.angular-tree-component-rtl]="treeModel.options.rtl">
@@ -38,7 +39,7 @@ import { TreeNodeDropSlot } from './tree-node-drop-slot.component';
           </div>
       </tree-viewport>
   `,
-    imports: [TreeViewportComponent, NgIf, TreeNodeCollectionComponent, TreeNodeDropSlot]
+  imports: [TreeViewportComponent, NgIf, TreeNodeCollectionComponent, TreeNodeDropSlot]
 })
 export class TreeComponent implements OnChanges {
   treeModel = inject(TreeModel);

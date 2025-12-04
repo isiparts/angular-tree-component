@@ -1,4 +1,4 @@
-import { Component , Input , ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { TreeNode } from '../models/tree-node.model';
 import { NgIf, NgTemplateOutlet } from '@angular/common';
 import { TreeNodeCheckboxComponent } from './tree-node-checkbox.component';
@@ -8,11 +8,11 @@ import { TreeDropDirective } from '../directives/tree-drop.directive';
 import { TreeNodeContent } from './tree-node-content.component';
 
 @Component({
-    selector: 'tree-node-wrapper',
-    encapsulation: ViewEncapsulation.None,
-    styles: [],
-    template: `
-      <div *ngIf="!templates.treeNodeWrapperTemplate" class="node-wrapper" [style.padding-left]="node.getNodePadding()">
+  selector: 'tree-node-wrapper',
+  encapsulation: ViewEncapsulation.None,
+  styles: [],
+  template: `
+      <div *ngIf="!templates.treeNodeWrapperTemplate" class="node-wrapper" [style.padding-left]="node.getNodePadding()" [attr.data-node-id]="node.id">
           <tree-node-checkbox *ngIf="node.options.useCheckbox" [node]="node"></tree-node-checkbox>
           <tree-node-expander [node]="node"></tree-node-expander>
           <div class="node-content-wrapper"
@@ -41,7 +41,7 @@ import { TreeNodeContent } from './tree-node-content.component';
               [ngTemplateOutletContext]="{ $implicit: node, node: node, index: index, templates: templates }">
       </ng-container>
   `,
-    imports: [NgIf, TreeNodeCheckboxComponent, TreeNodeExpanderComponent, TreeDragDirective, TreeDropDirective, TreeNodeContent, NgTemplateOutlet]
+  imports: [NgIf, TreeNodeCheckboxComponent, TreeNodeExpanderComponent, TreeDragDirective, TreeDropDirective, TreeNodeContent, NgTemplateOutlet]
 })
 
 export class TreeNodeWrapperComponent {
